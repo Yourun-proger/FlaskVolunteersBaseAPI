@@ -49,5 +49,5 @@ def get_volunteers():
 def post_help_request():
     if request.method == 'POST':
         data = request.json
-        return jsonify({'status': 'ok'}),
+        return jsonify({'status': 'succes'}), 201
 app.run()
